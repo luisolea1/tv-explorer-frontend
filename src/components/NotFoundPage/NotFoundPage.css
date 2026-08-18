@@ -1,0 +1,107 @@
+.not-found-page {
+  display: flex;
+  min-height: calc(100vh - 72px);
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 32px;
+}
+
+.not-found-page__content {
+  max-width: 680px;
+  text-align: center;
+}
+
+.not-found-page__code {
+  margin: 0;
+  background: linear-gradient(90deg, #5b8cff, #ff2e88);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(96px, 18vw, 180px);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.not-found-page__title {
+  margin: 40px 0 0;
+  color: #ffffff;
+  font-size: clamp(32px, 5vw, 52px);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.not-found-page__description {
+  max-width: 520px;
+  margin: 24px auto 0;
+  color: #a8b0c3;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.not-found-page__link {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 36px;
+  padding: 0 24px;
+  border: 1px solid rgb(142 176 255 / 45%);
+  border-radius: 12px;
+  background-color: rgb(91 140 255 / 10%);
+  color: #ffffff;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.not-found-page__link:hover {
+  border-color: #ff2e88;
+  background-color: rgb(255 46 136 / 12%);
+  transform: translateY(-2px);
+}
+
+.not-found-page__link:focus-visible {
+  outline: 2px solid #5b8cff;
+  outline-offset: 4px;
+}
+
+.not-found-page__link-icon {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.not-found-page__link:hover .not-found-page__link-icon {
+  transform: translateX(4px);
+}
+
+@media screen and (max-width: 767px) {
+  .not-found-page {
+    min-height: calc(100vh - 64px);
+    padding: 56px 20px;
+  }
+
+  .not-found-page__title {
+    margin-top: 32px;
+  }
+
+  .not-found-page__description {
+    font-size: 16px;
+  }
+
+  .not-found-page__link {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .not-found-page__link,
+  .not-found-page__link-icon {
+    transition: none;
+  }
+}
