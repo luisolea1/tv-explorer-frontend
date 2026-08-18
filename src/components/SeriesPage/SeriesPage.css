@@ -37,16 +37,20 @@
 }
 
 .series-page__content {
-  min-height: 280px;
   margin-top: 56px;
-  padding: 48px 32px;
-  border: 1px dashed rgb(142 176 255 / 35%);
-  border-radius: 20px;
-  background-color: rgb(255 255 255 / 3%);
+
 }
 
 .series-page__placeholder {
-  margin: 0;
+  display: flex;
+  min-height: 160px;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0 0;
+  padding: 32px;
+  border: 1px dashed rgb(142 176 255 / 35%);
+  border-radius: 20px;
+  background-color: rgb(255 255 255 / 3%);
   color: #778096;
   text-align: center;
 }
@@ -77,8 +81,11 @@
   }
 
   .series-page__content {
-    min-height: 220px;
-    margin-top: 40px;
-    padding: 36px 20px;
+  margin-top: 40px;
+}
+
+.series-page__placeholder {
+  min-height: 140px;
+  padding: 24px 20px;
 }
 }
