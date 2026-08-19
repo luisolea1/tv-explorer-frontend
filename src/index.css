@@ -1,3 +1,8 @@
+:root {
+  --font-family-body: "Inter", Arial, Helvetica, sans-serif;
+  --font-family-heading: "Space Grotesk", "Inter", Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,11 +15,17 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-body);
   background-color: #070b17;
   color: #f8fafc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-heading);
 }
 
 button,
