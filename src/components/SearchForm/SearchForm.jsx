@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { SEARCH_INPUT_MAX_LENGTH } from '../../utils/config.js';
 
 import './SearchForm.css';
 
@@ -35,15 +36,16 @@ function SearchForm({ isLoading, onSearch }) {
 
       <div className="search-form__controls">
         <input
-          className="search-form__input"
-          id="series-search"
-          maxLength="80"
-          name="query"
-          onChange={handleQueryChange}
-          placeholder="Ejemplo: Stranger Things"
-          type="search"
-          value={query}
-        />
+        className="search-form__input"
+        id="series-search"
+        maxLength={SEARCH_INPUT_MAX_LENGTH}
+        name="query"
+        onChange={handleQueryChange}
+        placeholder="Ejemplo: Stranger Things"
+        required
+        type="search"
+        value={query}
+/>
 
         <button
           className="search-form__button"
