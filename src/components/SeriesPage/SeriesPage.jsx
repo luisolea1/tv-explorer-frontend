@@ -5,22 +5,30 @@ import NothingFound from '../NothingFound/NothingFound.jsx';
 import Preloader from '../Preloader/Preloader.jsx';
 import SearchForm from '../SearchForm/SearchForm.jsx';
 import SearchResults from '../SearchResults/SearchResults.jsx';
+import SeriesModal from '../SeriesModal/SeriesModal.jsx';
+import ShowMoreButton from '../ShowMoreButton/ShowMoreButton.jsx';
 import { searchShows } from '../../utils/tvMazeApi.js';
 import './SeriesPage.css';
+
+const RESULTS_PER_PAGE = 3;
 
 function SeriesPage() {
 const [errorMessage, setErrorMessage] = useState('');
 const [hasSearched, setHasSearched] = useState(false);
 const [isLoading, setIsLoading] = useState(false);
+const [selectedShow, setSelectedShow] = useState(null);
 const [shows, setShows] = useState([]);
 const [submittedQuery, setSubmittedQuery] = useState('');
+const [visibleCount, setVisibleCount] = useState(RESULTS_PER_PAGE);
 
 async function handleSearch(query) {
     setSubmittedQuery(query);
     setHasSearched(true);
     setIsLoading(true);
     setErrorMessage('');
+    setSelectedShow(null);
     setShows([]);
+    setVisibleCount(RESULTS_PER_PAGE);
 
     try {
     const searchResults = await searchShows(query);
@@ -41,10 +49,21 @@ function handleRetry() {
 }
 
 function handleSelectShow(show) {
-    if (show.url) {
-    window.open(show.url, '_blank', 'noopener,noreferrer');
-    }
+    setSelectedShow(show);
 }
+
+function handleCloseModal() {
+    setSelectedShow(null);
+}
+
+function handleShowMore() {
+    setVisibleCount((currentCount) => (
+    currentCount + RESULTS_PER_PAGE
+    ));
+}
+
+const visibleShows = shows.slice(0, visibleCount);
+const remainingCount = Math.max(shows.length - visibleCount, 0);
 
 const showInitialMessage = !hasSearched && !isLoading;
 const showNothingFound = (
@@ -100,13 +119,28 @@ return (
         {showNothingFound && <NothingFound query={submittedQuery} />}
 
         {showResults && (
-        <SearchResults
+        <>
+            <SearchResults
             onSelectShow={handleSelectShow}
             query={submittedQuery}
-            shows={shows}
-        />
+            shows={visibleShows}
+            totalResults={shows.length}
+            />
+
+            <ShowMoreButton
+            onClick={handleShowMore}
+            remainingCount={remainingCount}
+            />
+        </>
         )}
     </section>
+
+    {selectedShow && (
+        <SeriesModal
+        onClose={handleCloseModal}
+        show={selectedShow}
+        />
+    )}
     </main>
 );
 }

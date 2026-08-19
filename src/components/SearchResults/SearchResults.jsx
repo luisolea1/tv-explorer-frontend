@@ -1,10 +1,10 @@
 import SeriesCard from '../SeriesCard/SeriesCard.jsx';
 import './SearchResults.css';
 
-function SearchResults({ onSelectShow, query, shows }) {
+function SearchResults({ onSelectShow, query, shows, totalResults = shows.length, }) {
   const resultLabel = shows.length === 1
     ? '1 resultado'
-    : `${shows.length} resultados`;
+    : `${totalResults} resultados`;
 
   return (
     <section
