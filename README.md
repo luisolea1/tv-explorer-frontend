@@ -4,6 +4,12 @@ TV Explorer es una aplicación front-end desarrollada con React que permite busc
 
 Los datos se obtienen desde la API pública de TVmaze.
 
+La aplicación está disponible en:
+
+[TV Explorer en Vercel](https://tv-explorer-frontend.vercel.app/)
+
+
+
 ## Funcionalidades
 
 - Página principal con una descripción del proyecto.
