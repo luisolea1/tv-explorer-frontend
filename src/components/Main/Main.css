@@ -41,11 +41,7 @@
 }
 
 .main__title-accent {
-  background: linear-gradient(90deg, #5b8cff, #ff2e88);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #315ee8;
 }
 
 .main__description {
@@ -65,8 +61,8 @@
   margin-top: 40px;
   padding: 0 24px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #5b8cff, #765dff);
-  box-shadow: 0 14px 36px rgb(91 140 255 / 24%);
+  background-color: #315ee8;
+  box-shadow: 0 14px 36px rgb(49 94 232 / 24%);
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -76,12 +72,12 @@
 }
 
 .main__button:hover {
-  box-shadow: 0 18px 42px rgb(91 140 255 / 36%);
+  box-shadow: 0 18px 42px rgb(49 94 232 / 36%);
   transform: translateY(-2px);
 }
 
 .main__button:focus-visible {
-  outline: 2px solid #ff2e88;
+  outline: 2px solid #315ee8;
   outline-offset: 4px;
 }
 
@@ -110,13 +106,6 @@
   background-color: #315ee8;
 }
 
-.main__glow_type_pink {
-  right: 18%;
-  bottom: -180px;
-  width: 320px;
-  height: 320px;
-  background-color: #b51870;
-}
 
 @media screen and (max-width: 1023px) {
   .main__hero {

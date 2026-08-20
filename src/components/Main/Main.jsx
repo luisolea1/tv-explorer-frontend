@@ -33,7 +33,6 @@ return (
         </div>
 
         <div className="main__glow main__glow_type_blue" aria-hidden="true" />
-        <div className="main__glow main__glow_type_pink" aria-hidden="true" />
     </section>
 
     <About />

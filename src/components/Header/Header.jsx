@@ -12,9 +12,12 @@ function Header() {
           aria-label="Ir a la página principal"
           to="/"
         >
-          <span className="header__brand-mark" aria-hidden="true">
-            TV
-          </span>
+        <img
+          className="header__brand-mark"
+          src="/favicon.svg"
+          alt=""
+          aria-hidden="true"
+        />
           <span className="header__brand-name">Explorer</span>
         </Link>
 
