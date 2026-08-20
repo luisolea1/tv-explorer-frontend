@@ -4,7 +4,7 @@ TV Explorer es una aplicación front-end desarrollada con React que permite busc
 
 Los datos se obtienen desde la API pública de TVmaze.
 
-## Funcionalidades planificadas
+## Funcionalidades
 
 - Página principal con una descripción del proyecto.
 - Buscador de series conectado con la API de TVmaze.
@@ -20,7 +20,7 @@ Los datos se obtienen desde la API pública de TVmaze.
 - Diseño responsivo para escritorio, tableta y dispositivos móviles.
 - Fuentes locales conectadas mediante @font-face.
 - Iconos SVG reutilizables.
-- Clases CSS nombradas según la metodología BEM
+- Clases CSS nombradas según la metodología BEM.
 
 ## API
 
@@ -61,45 +61,51 @@ Características relevantes:
 - Oxlint
 - Git y GitHub
 
-## Estructura planificada
+## Estructura
 
 ```text
-src/
-├── components/
-│   ├── About/
-│   ├── App/
-│   │   ├── App.css
-│   │   └── App.jsx
-│   ├── ErrorMessage/
-│   ├── Footer/
-│   ├── Header/
-│   ├── Main/
-│   ├── Navigation/
-│   ├── NotFoundPage/
-│   ├── NothingFound/
-│   ├── Preloader/
-│   ├── SearchForm/
-│   ├── SearchResults/
-│   ├── SeriesCard/
-│   ├── SeriesModal/
-│   ├── SeriesPage/
-│   └── ShowMoreButton/
-├── images/
-├── utils/
-├── vendor/
-│   └── fonts/
-├── index.css
-└── main.jsx
+├── public/
+│   └── favicon.svg
+└── src/
+    ├── components/
+    │   ├── About/
+    │   ├── App/
+    │   │   ├── App.css
+    │   │   └── App.jsx
+    │   ├── ErrorMessage/
+    │   ├── Footer/
+    │   ├── Header/
+    │   ├── Icon/
+    │   ├── Main/
+    │   ├── Navigation/
+    │   ├── NotFoundPage/
+    │   ├── NothingFound/
+    │   ├── Preloader/
+    │   ├── SearchForm/
+    │   ├── SearchResults/
+    │   ├── SeriesCard/
+    │   ├── SeriesModal/
+    │   ├── SeriesPage/
+    │   └── ShowMoreButton/
+    ├── images/
+    ├── utils/
+    │   ├── config.js
+    │   └── tvMazeApi.js
+    ├── vendor/
+    │   ├── fonts/
+    │   └── fonts.css
+    ├── index.css
+    └── main.jsx
 ```
 
-Cada componente tendrá su propio directorio con sus archivos JSX y CSS. Los estilos de cada archivo CSS pertenecerán únicamente a su componente.
+Cada componente tiene su propio directorio con sus archivos JSX y CSS. Los estilos de cada archivo CSS pertenecerán únicamente a su componente.
 
 ## Instalación y ejecución
 
-Clona el repositorio:
+Clona la rama del proyecto:
 
 ```bash
-git clone https://github.com/luisolea1/tv-explorer-frontend.git
+git clone --branch stage-react-api https://github.com/luisolea1/tv-explorer-frontend.git
 ```
 
 Entra al proyecto:

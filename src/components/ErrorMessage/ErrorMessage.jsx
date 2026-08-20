@@ -1,4 +1,4 @@
-import Icon from '../Icon/Icon';
+import Icon from '../Icon/Icon.jsx';
 import './ErrorMessage.css';
 
 function ErrorMessage({
