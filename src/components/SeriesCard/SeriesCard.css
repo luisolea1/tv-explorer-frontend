@@ -1,6 +1,5 @@
 .series-card {
   display: flex;
-  height: 100%;
   overflow: hidden;
   border: 1px solid rgb(255 255 255 / 10%);
   border-radius: 18px;
@@ -22,7 +21,7 @@
 .series-card__media {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 1 / 1;
   background-color: #161d30;
 }
 
