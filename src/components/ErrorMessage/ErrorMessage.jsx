@@ -1,3 +1,4 @@
+import Icon from '../Icon/Icon';
 import './ErrorMessage.css';
 
 function ErrorMessage({
@@ -10,10 +11,10 @@ return (
     aria-labelledby="error-message-title"
     role="alert"
     >
-    <div className="error-message__icon" aria-hidden="true">
-        !
-    </div>
-
+    <Icon
+        className="error-message__icon"
+        name="warning"
+    />
     <h2 className="error-message__title" id="error-message-title">
         Algo salió mal
     </h2>

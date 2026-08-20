@@ -85,6 +85,10 @@
   backdrop-filter: blur(10px);
 }
 
+.series-card__rating-icon {
+  font-size: 14px;
+}
+
 .series-card__content {
   display: flex;
   height: 100%;

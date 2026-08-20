@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import About from '../About/About.jsx';
+import Icon from '../Icon/Icon.jsx';
 import './Main.css';
 
 function Main() {
@@ -23,9 +24,11 @@ return (
 
         <Link className="main__button" to="/series">
             Explorar series
-            <span className="main__button-icon" aria-hidden="true">
-            →
-            </span>
+             <Icon
+              className="main__button-icon"
+              name="arrow-right"
+            />
+
         </Link>
         </div>
 

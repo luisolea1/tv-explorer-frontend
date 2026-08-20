@@ -39,11 +39,14 @@
   background-color: rgb(7 11 23 / 82%);
   color: #ffffff;
   cursor: pointer;
-  font-size: 28px;
   line-height: 1;
   transition:
     background-color 0.2s ease,
     transform 0.2s ease;
+}
+
+.series-modal__close-icon {
+  font-size: 22px;
 }
 
 .series-modal__close:hover {
@@ -54,6 +57,26 @@
 .series-modal__close:focus-visible {
   outline: 2px solid #5b8cff;
   outline-offset: 4px;
+}
+
+.series-modal__metadata-value_type_rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.series-modal__rating-icon {
+  color: #ffd166;
+  font-size: 15px;
+}
+
+.series-modal__source-icon {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.series-modal__source:hover .series-modal__source-icon {
+  transform: translate(2px, -2px);
 }
 
 .series-modal__media {
@@ -204,7 +227,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .series-modal__close,
-  .series-modal__source {
+  .series-modal__source,
+  .series-modal__source-icon {
     transition: none;
   }
 }

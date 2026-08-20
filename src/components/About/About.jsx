@@ -1,4 +1,6 @@
+import Icon from '../Icon/Icon.jsx';
 import './About.css';
+
 
 function About() {
 return (
@@ -44,7 +46,11 @@ return (
             target="_blank"
         >
             Visitar perfil de GitHub
-            <span aria-hidden="true">↗</span>
+            
+            <Icon
+            className="about__link-icon"
+            name="external-link"
+            />
         </a>
         </div>
     </div>

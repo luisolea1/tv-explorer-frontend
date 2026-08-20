@@ -1,3 +1,4 @@
+import Icon from '../Icon/Icon.jsx';
 import { RESULTS_PER_PAGE } from '../../utils/config.js';
 import './ShowMoreButton.css';
 
@@ -24,9 +25,10 @@ function ShowMoreButton({ onClick, remainingCount }) {
       >
         {buttonLabel}
 
-        <span className="show-more-button__icon" aria-hidden="true">
-          +
-        </span>
+        <Icon
+          className="show-more-button__icon"
+          name="plus"
+        />
       </button>
 
       <p className="show-more-button__remaining">

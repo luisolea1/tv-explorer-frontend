@@ -13,17 +13,13 @@
 }
 
 .error-message__icon {
-  display: flex;
   width: 64px;
   height: 64px;
-  align-items: center;
-  justify-content: center;
+  padding: 17px;
   border: 1px solid rgb(255 46 136 / 40%);
   border-radius: 50%;
   background-color: rgb(255 46 136 / 12%);
   color: #ff74ad;
-  font-size: 30px;
-  font-weight: 800;
 }
 
 .error-message__title {

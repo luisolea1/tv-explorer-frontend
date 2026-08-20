@@ -9,7 +9,7 @@
   max-width: 1280px;
   min-height: calc(100vh - 72px);
   align-items: center;
-  overflow: hidden;
+  overflow: clip;
   margin: 0 auto;
   padding: 96px 32px 80px;
 }
@@ -107,69 +107,69 @@
   right: -120px;
   width: 420px;
   height: 420px;
-background-color: #315ee8;
+  background-color: #315ee8;
 }
 
 .main__glow_type_pink {
-right: 18%;
-bottom: -180px;
-width: 320px;
-height: 320px;
-background-color: #b51870;
+  right: 18%;
+  bottom: -180px;
+  width: 320px;
+  height: 320px;
+  background-color: #b51870;
 }
 
 @media screen and (max-width: 1023px) {
-.main__hero {
-min-height: calc(100vh - 72px);
-padding-top: 72px;
-}
+  .main__hero {
+    min-height: calc(100vh - 72px);
+    padding-top: 72px;
+  }
 
-.main__content {
-max-width: 680px;
-}
+  .main__content {
+    max-width: 680px;
+  }
 
-.main__title {
-font-size: clamp(48px, 8vw, 72px);
-}
+  .main__title {
+    font-size: clamp(48px, 8vw, 72px);
+  }
 }
 
 @media screen and (max-width: 767px) {
-.main__hero {
-min-height: calc(100vh - 64px);
-align-items: flex-start;
-padding: 72px 20px 56px;
-}
+  .main__hero {
+    min-height: calc(100vh - 64px);
+    align-items: flex-start;
+    padding: 72px 20px 56px;
+  }
 
-.main__eyebrow {
-margin-bottom: 16px;
-font-size: 11px;
-}
+  .main__eyebrow {
+    margin-bottom: 16px;
+    font-size: 11px;
+  }
 
-.main__title {
-font-size: clamp(42px, 13vw, 58px);
-line-height: 1;
-}
+  .main__title {
+    font-size: clamp(42px, 13vw, 58px);
+    line-height: 1;
+  }
 
-.main__description {
-margin-top: 24px;
-font-size: 16px;
-line-height: 1.6;
-}
+  .main__description {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
-.main__button {
-width: 100%;
-margin-top: 32px;
-}
+  .main__button {
+    width: 100%;
+    margin-top: 32px;
+  }
 
-.main__glow_type_blue {
-top: 20%;
-right: -220px;
-}
+  .main__glow_type_blue {
+    top: 20%;
+    right: -220px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-.main__button,
-.main__button-icon {
+  .main__button,
+  .main__button-icon {
     transition: none;
-}
+  }
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import Icon from '../Icon/Icon.jsx'; 
 import './NotFoundPage.css';
 
 function NotFoundPage() {
@@ -23,9 +24,10 @@ return (
 
         <Link className="not-found-page__link" to="/">
           Volver al inicio
-          <span className="not-found-page__link-icon" aria-hidden="true">
-            →
-          </span>
+          <Icon
+            className="not-found-page__link-icon"
+            name="arrow-right"
+          />
         </Link>
       </section>
     </main>

@@ -1,3 +1,4 @@
+import Icon from '../Icon/Icon';
 import './NothingFound.css';
 
 function NothingFound({ query }) {
@@ -7,9 +8,10 @@ return (
     aria-labelledby="nothing-found-title"
     role="status"
     >
-    <div className="nothing-found__icon" aria-hidden="true">
-        ?
-    </div>
+    <Icon
+        className="nothing-found__icon"
+        name="question"
+    />
 
     <h2 className="nothing-found__title" id="nothing-found-title">
         No encontramos coincidencias
