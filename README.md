@@ -7,16 +7,20 @@ Los datos se obtienen desde la API pública de TVmaze.
 ## Funcionalidades planificadas
 
 - Página principal con una descripción del proyecto.
-- Página para buscar y mostrar series obtenidas desde la API.
-- Navegación mediante React Router.
+- Buscador de series conectado con la API de TVmaze.
+- Navegación entre páginas mediante React Router.
 - Resultados presentados en tarjetas reutilizables.
 - Visualización inicial de tres resultados.
-- Botón para mostrar tres resultados adicionales.
+- Carga progresiva de tres resultados adicionales.
 - Ventana modal con información detallada.
-- Preloader durante las solicitudes.
+- Cierre del modal mediante el botón, la superposición o la tecla Escape.
+- Preloader durante las solicitudes a la API.
 - Mensajes para búsquedas sin resultados y errores de conexión.
+- Página personalizada para rutas no encontradas.
 - Diseño responsivo para escritorio, tableta y dispositivos móviles.
-- Clases CSS nombradas según la metodología BEM.
+- Fuentes locales conectadas mediante @font-face.
+- Iconos SVG reutilizables.
+- Clases CSS nombradas según la metodología BEM
 
 ## API
 
@@ -151,3 +155,7 @@ Proyecto en desarrollo en la rama [`stage-react-api`](https://github.com/luisole
 ## Autor
 
 [Luis Olea](https://github.com/luisolea1)
+
+## Créditos
+
+Los datos de las series son proporcionados por la API de TVmaze.
