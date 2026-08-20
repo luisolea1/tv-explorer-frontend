@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="tv-gradient" x1="10" y1="8" x2="54" y2="56">
+      <stop stop-color="#5b8cff"></stop>
+      <stop offset="1" stop-color="#ff2e88"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="#070b17"></rect>
+
+  <rect x="10" y="13" width="44" height="36" rx="8" fill="#10182b" stroke="url(#tv-gradient)" stroke-width="4"></rect>
+
+  <path d="m28 23 14 8-14 8V23Z" fill="url(#tv-gradient)"></path>
+
+  <path d="M23 55h18" fill="none" stroke="#f8fafc" stroke-linecap="round" stroke-width="3"></path>
+</svg>

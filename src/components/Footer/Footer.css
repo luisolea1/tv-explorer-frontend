@@ -1,0 +1,124 @@
+.footer {
+  border-top: 1px solid rgb(255 255 255 / 8%);
+  background-color: #050914;
+}
+
+.footer__container {
+  display: grid;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 56px 32px 32px;
+  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.footer__brand {
+  max-width: 380px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  transition: color 0.2s ease;
+}
+
+.footer__logo:hover {
+  color: #ff2e88;
+}
+
+.footer__logo:focus-visible {
+  outline: 2px solid #5b8cff;
+  outline-offset: 5px;
+}
+
+.footer__description {
+  margin: 14px 0 0;
+  color: #778096;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer__navigation {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.footer__link {
+  border-radius: 4px;
+  color: #a8b0c3;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+}
+
+.footer__link:focus-visible {
+  outline: 2px solid #5b8cff;
+  outline-offset: 5px;
+}
+
+.footer__legal {
+  display: flex;
+  padding-top: 24px;
+  border-top: 1px solid rgb(255 255 255 / 7%);
+  color: #5f687d;
+  font-size: 12px;
+  grid-column: 1 / -1;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer__copyright,
+.footer__attribution {
+  margin: 0;
+}
+
+.footer__attribution-link {
+  border-radius: 3px;
+  color: #8eb0ff;
+  transition: color 0.2s ease;
+}
+
+.footer__attribution-link:hover {
+  color: #ff2e88;
+}
+
+.footer__attribution-link:focus-visible {
+  outline: 2px solid #5b8cff;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__container {
+    padding: 48px 20px 28px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__navigation {
+    flex-wrap: wrap;
+    gap: 20px 24px;
+  }
+
+  .footer__legal {
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__logo,
+  .footer__link,
+  .footer__attribution-link {
+    transition: none;
+  }
+}

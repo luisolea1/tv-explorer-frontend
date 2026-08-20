@@ -1,0 +1,26 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #070b17;
+  color: #f8fafc;
+}
+
+.app__content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.app__title {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 72px);
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 767px) {
+  .app__content {
+    padding: 32px 20px;
+  }
+}
